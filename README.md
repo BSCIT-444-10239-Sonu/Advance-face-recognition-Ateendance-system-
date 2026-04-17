@@ -3,7 +3,7 @@
 ## 📌 Project Overview
 
 This project is an **AI-powered Face Recognition Attendance System** developed using Python and OpenCV.
-It automatically detects and recognizes faces in real-time and marks attendance efficiently.
+It detects and recognizes faces in real-time and automatically marks attendance with database integration.
 
 ---
 
@@ -13,35 +13,43 @@ It automatically detects and recognizes faces in real-time and marks attendance 
 * ✅ Face recognition using trained model
 * ✅ Automatic attendance marking
 * ✅ User-friendly GUI (Tkinter)
-* ✅ Database integration (MySQL)
-* ✅ Secure and fast processing
+* ✅ Data storage using CSV/MySQL
+* ✅ Fast and efficient processing
 
 ---
 
 ## 🛠️ Technologies Used
 
-* **Python**
-* **OpenCV**
-* **Tkinter**
-* **MySQL**
-* **NumPy**
+* Python
+* OpenCV
+* Tkinter
+* NumPy
+* MySQL
 
 ---
 
 ## 📂 Project Structure
 
 ```
-├── attendance.py
-├── face_recognition.py
-├── train.py
-├── student.py
-├── main.py
-├── main_login.py
-├── developer.py
-├── help.py
-├── classifier.xml
-├── haarcascade_frontalface_default.xml
-├── sonu.csv
+Face-Recognition-Attendance-System/
+│
+├── data/                          # Dataset (face images)
+├── images/                        # UI images / assets
+├── college_images/                # Additional images
+│
+├── attendance.py                  # Attendance logic
+├── face_recognition.py            # Face recognition logic
+├── train.py                       # Model training
+├── student.py                     # Student data handling
+├── main.py                        # Main application entry
+├── main_login.py                  # Login system
+├── developer.py                   # Developer info GUI
+├── help.py                        # Help section
+│
+├── classifier.xml                 # Trained model file
+├── haarcascade_frontalface_default.xml  # Face detection model
+├── sonu.csv                       # Attendance data
+│
 └── README.md
 ```
 
@@ -49,19 +57,13 @@ It automatically detects and recognizes faces in real-time and marks attendance 
 
 ## ▶️ How to Run the Project
 
-### Step 1: Clone the Repository
-
-```
-git clone https://github.com/your-username/your-repo-name.git
-```
-
-### Step 2: Install Required Libraries
+### 1️⃣ Install Required Libraries
 
 ```
 pip install opencv-python numpy mysql-connector-python
 ```
 
-### Step 3: Run the Application
+### 2️⃣ Run the Application
 
 ```
 python main.py
@@ -73,11 +75,17 @@ python main.py
 
 ---
 
+## ⚠️ Note
+
+* Ensure all folders like `data`, `images`, and `college_images` are properly available.
+* Some dataset files may not be included due to size limitations.
+
+---
+
 ## 👨‍💻 Author
 
 **Sonu Kumar**
 BSCIT Student | Data Analytics & Machine Learning Enthusiast
 
 ---
-
 
